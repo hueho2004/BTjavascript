@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script src="order.js"></script>
+    <style>
+        *{
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-warning text-white mt-5">
+        <div class="row ">
+                <p class="col-3">Customer Name:</p>
+                <div class="col-4">
+                    <input type="text" id="name">
+                </div>
+        </div>
+        <div class="row ">
+            <p class="col-3">ID:</p>
+            <div class="col-4">
+                <input type="text" id="id">
+            </div>
+        </div>
+        <div class="row ">
+            <p class="col-3">Product Name:</p>
+            <div class="col-4">
+                <input type="text" id="prdname">
+            </div>
+        </div>
+        <div class="row ">
+            <p class="col-3">Quantity:</p>
+            <div class="col-4">
+                <input type="text" id="qty">
+            </div>
+        </div>
+        <div class="row ">
+            <p class="col-3">Price:</p>
+            <div class="col-4">
+                <input type="text" id="price">
+            </div>
+        </div>
+        <div class="row ">
+            <input class="col-2 " type="button" value="save" onclick="save()">
+            <input class="col-2 " type="button" value="show" onclick="show()">
+            <input class="col-2" type="button" value="reset" onclick="reset()">
+        </div>
+    </div>
+    <br>
+    <table class="table border" >
+        <thead class="thead-dark">
+            <tr>
+                <th>Auto_increment</th>
+                <th>Customer_Name</th>
+                <th>ID</th>
+                <th>Product_Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tbl"></tbody>
+    </table>
+
+</body>
+</html>
